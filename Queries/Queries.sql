@@ -5,3 +5,9 @@ SELECT * FROM spotify
 WHERE position < 50
 AND peak_position > 1
 ORDER BY position ASC;
+
+-- Newest Songs In Top 50
+SELECT * FROM spotify
+WHERE position < 50 
+AND days < 900
+ORDER BY days ASC;
